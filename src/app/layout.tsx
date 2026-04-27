@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/header/Header";
 
 export const metadata: Metadata = {
   title: "Nyborg Painting",
@@ -13,6 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Header></Header>
       <body>{children}</body>
     </html>
   );

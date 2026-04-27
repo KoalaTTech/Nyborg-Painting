@@ -1,3 +1,15 @@
-html {
-  background-color: beige;
+/* global css variables - 1 src of truth - 1 place to set or modify */
+
+:root {
+  --slate: #708090;
+  --sage: #87A96B;
+  --soft-white: #F9FAFB;
+  --max-width: 1200px;
+}
+
+body {
+  background-color: var(--soft-white);
+  color: var(--slate);
+  margin: 0;
+  font-family: sans-serif;
 }
