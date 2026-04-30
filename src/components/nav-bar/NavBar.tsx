@@ -6,6 +6,7 @@ const sections = [
   { label: 'Home', id: 'banner' },
   { label: 'Examples', id: 'examples' },
   { label: 'Reviews', id: 'reviews' },
+  { label: 'Contact', id: 'contact' },
 ];
 
 export const NavBar = () => {

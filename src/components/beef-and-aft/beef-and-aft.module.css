@@ -1,0 +1,47 @@
+.wrapper {
+	width: min(1100px, 94vw);
+	margin: 0 auto;
+	padding: 3rem 0 5.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.25rem;
+}
+
+.column {
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 12px;
+	padding: 1rem;
+}
+
+.heading {
+	margin: 0 0 0.9rem;
+	font-size: clamp(1rem, 0.5vw + 0.9rem, 1.35rem);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #475569;
+}
+
+.stack {
+	display: grid;
+	gap: 0.8rem;
+}
+
+.placeholder {
+	width: 100%;
+	height: clamp(130px, 20vw, 200px);
+	border-radius: 10px;
+	background: linear-gradient(145deg, #d7d7d7, #c9c9c9);
+	border: 1px solid #bcbcbc;
+}
+
+@media (max-width: 640px) {
+	.wrapper {
+		gap: 0.75rem;
+		padding-top: 1.75rem;
+	}
+
+	.column {
+		padding: 0.75rem;
+	}
+}

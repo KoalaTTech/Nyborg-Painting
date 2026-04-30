@@ -1,3 +1,103 @@
 .main {
     margin: 0;
 }
+
+.reviewsSection,
+.contactSection {
+    padding: 4rem 0 6rem;
+}
+
+.reviewsSection {
+    background: linear-gradient(180deg, #f9fafb 0%, #eef2f4 100%);
+}
+
+.contactSection {
+    background: linear-gradient(180deg, #eef2f4 0%, #dfe7e9 100%);
+}
+
+.contentShell {
+    width: min(1100px, 94vw);
+    margin: 0 auto;
+}
+
+.sectionHeading {
+    margin: 0 0 1.25rem;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: clamp(1.25rem, 1.1vw + 1rem, 2rem);
+}
+
+.reviewGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.reviewCard {
+    background-color: #ffffff;
+    border: 1px solid #d5dee0;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.reviewText {
+    margin: 0;
+    color: #334155;
+    line-height: 1.55;
+}
+
+.reviewMeta {
+    margin: 0.9rem 0 0;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.contactText {
+    margin: 0 0 1.25rem;
+    color: #334155;
+    max-width: 62ch;
+    line-height: 1.6;
+}
+
+.contactActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.primaryButton,
+.socialButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 1rem;
+    border-radius: 10px;
+    border: 1px solid #425968;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.primaryButton {
+    background-color: #425968;
+    color: #f9fafb;
+}
+
+.socialButton {
+    background-color: #f9fafb;
+    color: #334155;
+}
+
+.primaryButton:hover,
+.socialButton:hover {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 800px) {
+    .reviewGrid {
+        grid-template-columns: 1fr;
+    }
+}
