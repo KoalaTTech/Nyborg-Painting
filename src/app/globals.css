@@ -7,6 +7,12 @@
   --max-width: 1200px;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--soft-white);
   color: var(--slate);
